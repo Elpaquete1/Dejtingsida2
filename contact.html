@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dejtingsida - Kontakta oss</title>
+    <style>
+        /* CSS-stilar för att centrera och anpassa storleken på innehållet */
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ff6b6b; /* Mörkare röd */
+            color: #000; /* Svart färg för text */
+        }
+
+        body {
+            flex-direction: column;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 500px;
+            padding: 20px;
+            background-color: #ffeded; /* Ljusare rosa */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: auto; /* Centrera vertikalt */
+            margin-bottom: auto; /* Centrera vertikalt */
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #ff6b6b; /* Mörkare röd */
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Kontakta oss för en offertförfrågan!</h1>
+        </header>
+
+        <p>Här kan du kontakta oss för mer information.</p>
+        
+        <!-- Kontaktformulär -->
+        <form id="contactForm">
+            <div>
+                <label for="name">Namn:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div>
+                <label for="email">E-post:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="message">Meddelande:</label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+            <button type="submit">Skicka</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 LoveLink</p>
+    </footer>
+
+    <!-- Inkludera JavaScript-filen -->
+    <script src="script.js"></script>
+</body>
+</html>
